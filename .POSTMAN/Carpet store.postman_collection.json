@@ -1,0 +1,1575 @@
+{
+	"info": {
+		"_postman_id": "9bb40626-52c6-473e-9b0f-5205a9ac1d9e",
+		"name": "Carpet store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "Get administrators",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "Get administrator",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/administrator/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bd-lxhRG/Sn+ziaUwqHjk7QJ2qs5rA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:41:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 1,\n    \"username\": \"milantex\",\n    \"passwordHash\": \"30B1B23A56D4AAA7BF951355D4F3CCFB157F2CF7B27D673A1B91613C431F28A76D3E621B9F38FD3C7954D619909EF4CBB574E225D6D60EDC6D423E652112633A\"\n}"
+						},
+						{
+							"name": "Get administrators",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/administrator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c6-i/GnbbfyiXl4ad3wS7BgY5NZcR8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:41:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"administratorId\": 1,\n        \"username\": \"milantex\",\n        \"passwordHash\": \"30B1B23A56D4AAA7BF951355D4F3CCFB157F2CF7B27D673A1B91613C431F28A76D3E621B9F38FD3C7954D619909EF4CBB574E225D6D60EDC6D423E652112633A\"\n    },\n    {\n        \"administratorId\": 2,\n        \"username\": \"test_user\",\n        \"passwordHash\": \"90856ufdjg98tyuhgrehg34\"\n    },\n    {\n        \"administratorId\": 3,\n        \"username\": \"pperic\",\n        \"passwordHash\": \"6A4C0DC4FCC43BDEA28963DF73E4F8351BCDAE08FDA1516234E8D764AF8178A610BCCA2813D204DFF92A43F0511EB0016C7682CCF7B343D99E01739FC26EF104\"\n    },\n    {\n        \"administratorId\": 7,\n        \"username\": \"mmilic\",\n        \"passwordHash\": \"D1B080950E85C8916A16DA7CE500D85B56E52B64F59B958F1929F164FB0751544925557C0649C9BB50F3DE0D1471FCE3E233E1EF33BD0EA06601FC7D54F927FC\"\n    },\n    {\n        \"administratorId\": 9,\n        \"username\": \"admin\",\n        \"passwordHash\": \"C7AD44CBAD762A5DA0A452F9E854FDC1E0E7A52A38015F23F3EAB1D80B931DD472634DFAC71CD34EBC35D16AB7FB8A90C81F975113D6C7538DC69DD8DE9077EC\"\n    },\n    {\n        \"administratorId\": 10,\n        \"username\": \"test\",\n        \"passwordHash\": \"EE26B0DD4AF7E749AA1A8EE3C10AE9923F618980772E473F8819A5D4940E0DB27AC185F8A0E1D5F84F88BC887FD67B143732C304CC5FA9AD8E6F57F50028A8FF\"\n    },\n    {\n        \"administratorId\": 11,\n        \"username\": \"masa.masa123\",\n        \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add administrator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"luka.luka123\",\r\n    \"password\": \"lukaNatalija\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/administrator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add administrator",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"luka.luka123\",\r\n    \"password\": \"lukaNatalija\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/administrator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "194"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c2-75nZMVS6nyVB/l8gY3eZC0s0If4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:46:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"luka.luka123\",\n    \"passwordHash\": \"0D8A88A9FC30C255A0346E1A886FAF88EE735570319B89EA5C18A2F3899A14858B0AE9439F39BB162411D4406D94C8FA4722893E730604E3B80392EA87249FCB\",\n    \"administratorId\": 12\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Administrator login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"masa.masa123\",\r\n    \"password\":\"masa123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/administrator/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"administrator",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Administrator login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"masa.masa123\",\r\n    \"password\":\"masa123\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/administrator/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"administrator",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "641"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"281-b2rIGbhFTQYtSCL5nilFSAuf9Sc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:39:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 11,\n    \"identity\": \"masa.masa123\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW5pc3RyYXRvciIsImlkIjoxMSwiaWRlbnRpdHkiOiJtYXNhLm1hc2ExMjMiLCJleHAiOjE1OTQzMTMwOTcuNjI1LCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNi4xIiwiaWF0IjoxNTk0MzEyNzk3fQ.2HJkghcuHmOhOqPY_z31_KmPybeApNCBp-6oLuPUeJg\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW5pc3RyYXRvciIsImlkIjoxMSwiaWRlbnRpdHkiOiJtYXNhLm1hc2ExMjMiLCJleHAiOjE1OTY5OTExOTcuNjMyLCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNi4xIiwiaWF0IjoxNTk0MzEyNzk3fQ.M93wD6i-uCLJFMCi7E1uPJP7hqdUlYEPaizZSq55AT8\",\n    \"refreshTokenExpiresAt\": \"2020-08-09T16:39:57.632Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "User registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"masa@masa.com\",\r\n    \"password\":\"masa123\",\r\n    \"forename\":\"Masa\",\r\n    \"surname\":\"GAjevic\",\r\n    \"phoneNumber\":\"063239966\",\r\n    \"postalAddress\":\"Bezanija BEzanija  BEzanija 123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User registration",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"masa@masa.com\",\r\n    \"password\":\"masa123\",\r\n    \"forename\":\"Masa\",\r\n    \"surname\":\"GAjevic\",\r\n    \"phoneNumber\":\"+381/639966\",\r\n    \"postalAddress\":\"Bezanija BEzanija  BEzanija 123\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/user/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "298"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12a-4ZnbhHDBkQhOtG7eWmcMCHSZNv8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:17:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"masa@masa.com\",\n    \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\n    \"forename\": \"Masa\",\n    \"surname\": \"GAjevic\",\n    \"phoneNumber\": \"+381/639966\",\n    \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\",\n    \"userId\": 6\n}"
+						}
+					]
+				},
+				{
+					"name": "User login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "User login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"masa@masa.com\",\r\n    \"password\":\"masa123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "617"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"269-En5h1TxIEkFvi6/ZtM75QMF/iSE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:18:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"identity\": \"masa@masa.com\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsImlkIjo2LCJpZGVudGl0eSI6Im1hc2FAbWFzYS5jb20iLCJleHAiOjE1OTQzMTU0MDkuNDc1LCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNi4xIiwiaWF0IjoxNTk0MzE1MTA5fQ.jRwg5wBTYf8fRRAwHi70jY9zxUj86BZZiA_t5apgHeI\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsImlkIjo2LCJpZGVudGl0eSI6Im1hc2FAbWFzYS5jb20iLCJleHAiOjE1OTY5OTM1MDkuNDc4LCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNi4xIiwiaWF0IjoxNTk0MzE1MTA5fQ.0mv8fYujLPIDOkZEQHvX_C8tSNUASQCLrUpQ3EdF7pg\",\n    \"refreshTokenExpiresAt\": \"2020-08-09T17:18:29.478Z\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "Get categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "583"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"247-9pHB/Q/WX0qaZfOVvgE7rmbLH0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:57:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"categoryId\": 1,\n        \"name\": \"Staze\",\n        \"imagePath\": \"assets/pc.jpg\",\n        \"parentCategoryId\": null,\n        \"categories\": []\n    },\n    {\n        \"categoryId\": 2,\n        \"name\": \"Tepisi za trpezarije\",\n        \"imagePath\": \"assets/home.jpg\",\n        \"parentCategoryId\": null,\n        \"categories\": []\n    },\n    {\n        \"categoryId\": 3,\n        \"name\": \"Podni tepisi\",\n        \"imagePath\": \"assets/pc/laptop.jpg\",\n        \"parentCategoryId\": null,\n        \"categories\": []\n    },\n    {\n        \"categoryId\": 4,\n        \"name\": \"Tepisi za decije sobe\",\n        \"imagePath\": \"assets/pc/memory.jpg\",\n        \"parentCategoryId\": null,\n        \"categories\": []\n    },\n    {\n        \"categoryId\": 5,\n        \"name\": \"Preparirane životinje\",\n        \"imagePath\": \"assets/pc/memory/hdd.jpg\",\n        \"parentCategoryId\": null,\n        \"categories\": []\n    }\n]"
+						},
+						{
+							"name": "Get category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/category/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"63-OyL+GBP0BW4Db5pE0L2txS8IbdA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:57:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 1,\n    \"name\": \"Staze\",\n    \"imagePath\": \"assets/pc.jpg\",\n    \"parentCategoryId\": null,\n    \"categories\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Frotiri\",\r\n    \"imagePath\":\"sadjkah/slike/slika1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Frotiri\",\r\n    \"imagePath\":\"sadjkah/slike/slika1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6d-7uUDp7REAL4RWF56DemHltlm39w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 16:59:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 10,\n    \"name\": \"Frotiri\",\n    \"imagePath\": \"sadjkah/slike/slika1\",\n    \"parentCategoryId\": null,\n    \"categories\": []\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Carpet",
+			"item": [
+				{
+					"name": "Add carpet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"name\":\"Dobar tepih\",\r\n    \"categoryId\":1,\r\n    \"excerpt\":\"assjadhjskadsjahdads\",\r\n     \"description\":\"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\r\n     \"price\":15000\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/carpet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"carpet"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add carpet",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \"name\":\"Dobar tepih\",\r\n    \"categoryId\":1,\r\n    \"excerpt\":\"assjadhjskadsjahdads\",\r\n     \"description\":\"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\r\n     \"price\":15000\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carpet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carpet"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f8-txMBUbcoAGoZQmIucDoOtZVEPTM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:03:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"carpetId\": 9,\n    \"name\": \"Dobar tepih\",\n    \"categoryId\": 1,\n    \"excerpt\": \"assjadhjskadsjahdads\",\n    \"description\": \"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\n    \"status\": \"XXL\",\n    \"isPromoted\": 0,\n    \"createdAt\": \"2020-07-09T17:03:17.000Z\",\n    \"category\": {\n        \"categoryId\": 1,\n        \"name\": \"Staze\",\n        \"imagePath\": \"assets/pc.jpg\",\n        \"parentCategoryId\": null\n    },\n    \"carpetPrices\": [\n        {\n            \"carpetPriceId\": 8,\n            \"carpetId\": 9,\n            \"price\": \"15000.00\",\n            \"createdAt\": \"2020-07-09T17:03:17.000Z\"\n        }\n    ],\n    \"photos\": []\n}"
+						},
+						{
+							"name": "Edit carpet",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \"name\":\"Dobar tepih\",\r\n    \"categoryId\":1,\r\n    \"excerpt\":\"assjadhjskadsjahdads\",\r\n     \"description\":\"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\r\n     \"price\":15000,\r\n     \"status\":\"XXL\",\r\n     \"isPromoted\":0\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carpet/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carpet",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "581"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"245-MIVid+ZoUZhYQ02Y7cD4MyCLW1s\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:06:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"carpetId\": 6,\n    \"name\": \"Dobar tepih\",\n    \"categoryId\": 1,\n    \"excerpt\": \"assjadhjskadsjahdads\",\n    \"description\": \"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\n    \"status\": \"XXL\",\n    \"isPromoted\": 0,\n    \"createdAt\": \"2020-07-09T09:52:14.000Z\",\n    \"category\": {\n        \"categoryId\": 1,\n        \"name\": \"Staze\",\n        \"imagePath\": \"assets/pc.jpg\",\n        \"parentCategoryId\": null\n    },\n    \"carpetPrices\": [\n        {\n            \"carpetPriceId\": 7,\n            \"carpetId\": 6,\n            \"price\": \"900.00\",\n            \"createdAt\": \"2020-07-09T10:06:48.000Z\"\n        },\n        {\n            \"carpetPriceId\": 9,\n            \"carpetId\": 6,\n            \"price\": \"15000.00\",\n            \"createdAt\": \"2020-07-09T17:06:58.000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get carpet",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carpet/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carpet",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "977"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d1-5eiCkXvEccPBYep7SW5TakWQs0M\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:05:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"carpetId\": 6,\n    \"name\": \"Linea\",\n    \"categoryId\": 3,\n    \"excerpt\": \"Savrsen tepih\",\n    \"description\": \"Kolekciju Linea čini kombinacija modernih, retro, etno i klasičnih dezena. Preovladavaju jaki tonovi crvene, bordo i naranžaste.Kolekciju Linea čini kombinacija modernih, retro, etno i klasičnih dezena. Preovladavaju jaki tonovi crvene, bordo i naranžaste.Kolekciju Linea čini kombinacija modernih, retro, etno i klasičnih dezena. Preovladavaju jaki tonovi crvene, bordo i naranžaste.Kolekciju Linea čini kombinacija modernih, retro, etno i klasičnih dezena. Preovladavaju jaki tonovi crvene, bordo i naranžaste.\",\n    \"status\": \"XXL\",\n    \"isPromoted\": 0,\n    \"createdAt\": \"2020-07-09T09:52:14.000Z\",\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Podni tepisi\",\n        \"imagePath\": \"assets/pc/laptop.jpg\",\n        \"parentCategoryId\": null\n    },\n    \"photos\": [\n        {\n            \"photoId\": 11,\n            \"carpetId\": 6,\n            \"imagePath\": \"202079-8152638871-tepih2.jpg\"\n        }\n    ],\n    \"carpetPrices\": [\n        {\n            \"carpetPriceId\": 7,\n            \"carpetId\": 6,\n            \"price\": \"900.00\",\n            \"createdAt\": \"2020-07-09T10:06:48.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Upload photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/D:/Downloads/masa/storage/photos/small/202079-4660678344-tepih3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/carpet/6/uploadPhoto/?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"carpet",
+								"6",
+								"uploadPhoto",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Upload photo",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/D:/Downloads/masa/storage/photos/small/202079-4660678344-tepih3.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carpet/6/uploadPhoto/?",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carpet",
+										"6",
+										"uploadPhoto",
+										""
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5a-0ajlyy7wOpnpz+PPUBCYpzLywM8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:09:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"carpetId\": \"6\",\n    \"imagePath\": \"202079-7113734067-202079-4660678344-tepih3.jpg\",\n    \"photoId\": 13\n}"
+						}
+					]
+				},
+				{
+					"name": "Search carpet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "Search carpet",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"categoryId\":3,\r\n     \"priceMin\": 550,\r\n      \"priceMax\": 1000\r\n     \r\n\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carpet/search",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carpet",
+										"search"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "454"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c6-6e39DQSnXd99z3eTQA07rj/pY5Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:11:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"carpetId\": 8,\n        \"name\": \"Tepih baš\",\n        \"categoryId\": 3,\n        \"excerpt\": \"Tepih je ovaj jako mekan\",\n        \"description\": \"Ovaj tepih je bas lep i mekan i bas je lepo gaziti po njemu mmmm baš je lepo to skroz lepo\",\n        \"status\": \"XXXL\",\n        \"isPromoted\": 0,\n        \"createdAt\": \"2020-07-09T09:52:35.000Z\",\n        \"carpetPrices\": [\n            {\n                \"carpetPriceId\": 5,\n                \"carpetId\": 8,\n                \"price\": \"550.00\",\n                \"createdAt\": \"2020-07-09T09:59:32.000Z\"\n            }\n        ],\n        \"photos\": [\n            {\n                \"photoId\": 12,\n                \"carpetId\": 8,\n                \"imagePath\": \"202079-4660678344-tepih3.jpg\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "Search carpet no carpets",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"categoryId\":1,\r\n     \"priceMin\": 550,\r\n      \"priceMax\": 1000\r\n     \r\n\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carpet/search",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carpet",
+										"search"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"58-pPY3cV5Kx+nMkxrri8jBhjTtUMo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:10:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"statusCode\": 0,\n    \"message\": \"No carpets found for these search parameters.\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/user/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cart",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/user/cart",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "386"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"182-0DX4xBjDuRhrmNRdYDyTdMQxjC4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:20:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cartId\": 87,\n    \"userId\": 6,\n    \"createdAt\": \"2020-07-09T17:20:09.000Z\",\n    \"user\": {\n        \"userId\": 6,\n        \"email\": \"masa@masa.com\",\n        \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\n        \"forename\": \"Masa\",\n        \"surname\": \"GAjevic\",\n        \"phoneNumber\": \"+381/639966\",\n        \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\"\n    },\n    \"cartCarpets\": []\n}"
+						},
+						{
+							"name": "Edit cart",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"carpetId\": 6,\r\n    \"quantity\":15\r\n\r\n\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/user/cart",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1035"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40b-rklnbNE05sPhLkG0yalBfJlrXng\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:23:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cartId\": 87,\n    \"userId\": 6,\n    \"createdAt\": \"2020-07-09T17:20:09.000Z\",\n    \"user\": {\n        \"userId\": 6,\n        \"email\": \"masa@masa.com\",\n        \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\n        \"forename\": \"Masa\",\n        \"surname\": \"GAjevic\",\n        \"phoneNumber\": \"+381/639966\",\n        \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\"\n    },\n    \"cartCarpets\": [\n        {\n            \"cartCarpetId\": 16,\n            \"cartId\": 87,\n            \"carpetId\": 6,\n            \"quantity\": 15,\n            \"carpet\": {\n                \"carpetId\": 6,\n                \"name\": \"Dobar tepih\",\n                \"categoryId\": 1,\n                \"excerpt\": \"assjadhjskadsjahdads\",\n                \"description\": \"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\n                \"status\": \"XXL\",\n                \"isPromoted\": 0,\n                \"createdAt\": \"2020-07-09T09:52:14.000Z\",\n                \"category\": {\n                    \"categoryId\": 1,\n                    \"name\": \"Staze\",\n                    \"imagePath\": \"assets/pc.jpg\",\n                    \"parentCategoryId\": null\n                },\n                \"carpetPrices\": [\n                    {\n                        \"carpetPriceId\": 7,\n                        \"carpetId\": 6,\n                        \"price\": \"900.00\",\n                        \"createdAt\": \"2020-07-09T10:06:48.000Z\"\n                    },\n                    {\n                        \"carpetPriceId\": 9,\n                        \"carpetId\": 6,\n                        \"price\": \"15000.00\",\n                        \"createdAt\": \"2020-07-09T17:06:58.000Z\"\n                    }\n                ]\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "Add to cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"carpetId\": 6,\r\n    \"quantity\":10\r\n\r\n\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/user/cart/addToCart",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"addToCart"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1035"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40b-w6UktEkhikA/5l9XfocWsxtjH8w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:22:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cartId\": 87,\n    \"userId\": 6,\n    \"createdAt\": \"2020-07-09T17:20:09.000Z\",\n    \"user\": {\n        \"userId\": 6,\n        \"email\": \"masa@masa.com\",\n        \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\n        \"forename\": \"Masa\",\n        \"surname\": \"GAjevic\",\n        \"phoneNumber\": \"+381/639966\",\n        \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\"\n    },\n    \"cartCarpets\": [\n        {\n            \"cartCarpetId\": 16,\n            \"cartId\": 87,\n            \"carpetId\": 6,\n            \"quantity\": 10,\n            \"carpet\": {\n                \"carpetId\": 6,\n                \"name\": \"Dobar tepih\",\n                \"categoryId\": 1,\n                \"excerpt\": \"assjadhjskadsjahdads\",\n                \"description\": \"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\n                \"status\": \"XXL\",\n                \"isPromoted\": 0,\n                \"createdAt\": \"2020-07-09T09:52:14.000Z\",\n                \"category\": {\n                    \"categoryId\": 1,\n                    \"name\": \"Staze\",\n                    \"imagePath\": \"assets/pc.jpg\",\n                    \"parentCategoryId\": null\n                },\n                \"carpetPrices\": [\n                    {\n                        \"carpetPriceId\": 7,\n                        \"carpetId\": 6,\n                        \"price\": \"900.00\",\n                        \"createdAt\": \"2020-07-09T10:06:48.000Z\"\n                    },\n                    {\n                        \"carpetPriceId\": 9,\n                        \"carpetId\": 6,\n                        \"price\": \"15000.00\",\n                        \"createdAt\": \"2020-07-09T17:06:58.000Z\"\n                    }\n                ]\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Make order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartId\": 87,\r\n    \"userId\": 6,\r\n    \"createdAt\": \"2020-07-09T17:20:09.000Z\",\r\n    \"user\": {\r\n        \"userId\": 6,\r\n        \"email\": \"masa@masa.com\",\r\n        \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\r\n        \"forename\": \"Masa\",\r\n        \"surname\": \"GAjevic\",\r\n        \"phoneNumber\": \"+381/639966\",\r\n        \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\"\r\n    },\r\n    \"cartCarpets\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/cart/makeOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"cart",
+								"makeOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Make order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cartId\": 87,\r\n    \"userId\": 6,\r\n    \"createdAt\": \"2020-07-09T17:20:09.000Z\",\r\n    \"user\": {\r\n        \"userId\": 6,\r\n        \"email\": \"masa@masa.com\",\r\n        \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\r\n        \"forename\": \"Masa\",\r\n        \"surname\": \"GAjevic\",\r\n        \"phoneNumber\": \"+381/639966\",\r\n        \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\"\r\n    },\r\n    \"cartCarpets\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/user/cart/makeOrder",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"makeOrder"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1126"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"466-o8ENX3WNxPIBgwDa31HOL0lgzos\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jul 2020 17:26:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"orderId\": 7,\n    \"createdAt\": \"2020-07-09T17:26:21.000Z\",\n    \"cartId\": 87,\n    \"status\": \"pending\",\n    \"cart\": {\n        \"cartId\": 87,\n        \"userId\": 6,\n        \"createdAt\": \"2020-07-09T17:26:21.000Z\",\n        \"user\": {\n            \"userId\": 6,\n            \"email\": \"masa@masa.com\",\n            \"passwordHash\": \"6079089EE074AB9EF80C15630F24B1FEF4208CD2D0305C29F468B7D0A01D4B7E196FB03C9A86C28ED19D50537DE860CCF554007D3C5B3848026002A42A2BE033\",\n            \"forename\": \"Masa\",\n            \"surname\": \"GAjevic\",\n            \"phoneNumber\": \"+381/639966\",\n            \"postalAddress\": \"Bezanija BEzanija  BEzanija 123\"\n        },\n        \"cartCarpets\": [\n            {\n                \"cartCarpetId\": 16,\n                \"cartId\": 87,\n                \"carpetId\": 6,\n                \"quantity\": 15,\n                \"carpet\": {\n                    \"carpetId\": 6,\n                    \"name\": \"Dobar tepih\",\n                    \"categoryId\": 1,\n                    \"excerpt\": \"assjadhjskadsjahdads\",\n                    \"description\": \"sadashfkjuagfaoiaehfasafjdldsaldasjkaasdhasfasdfsajfljkahjfkaljflksajiklsajdklsksdsdasddsasdkjsaksajlksasakdjsadkdaskads\",\n                    \"status\": \"XXL\",\n                    \"isPromoted\": 0,\n                    \"createdAt\": \"2020-07-09T09:52:14.000Z\",\n                    \"category\": {\n                        \"categoryId\": 1,\n                        \"name\": \"Staze\",\n                        \"imagePath\": \"assets/pc.jpg\",\n                        \"parentCategoryId\": null\n                    },\n                    \"carpetPrices\": [\n                        {\n                            \"carpetPriceId\": 7,\n                            \"carpetId\": 6,\n                            \"price\": \"900.00\",\n                            \"createdAt\": \"2020-07-09T10:06:48.000Z\"\n                        },\n                        {\n                            \"carpetPriceId\": 9,\n                            \"carpetId\": 6,\n                            \"price\": \"15000.00\",\n                            \"createdAt\": \"2020-07-09T17:06:58.000Z\"\n                        }\n                    ]\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsImlkIjo2LCJpZGVudGl0eSI6Im1hc2FAbWFzYS5jb20iLCJleHAiOjE1OTY5OTM1MDkuNDc4LCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNi4xIiwiaWF0IjoxNTk0MzE1MTA5fQ.0mv8fYujLPIDOkZEQHvX_C8tSNUASQCLrUpQ3EdF7pg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cdc6af0a-2448-4bcd-a96e-f16bf1a08217",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b5c69a6b-6828-4277-a43f-475ef1e0d8e8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW5pc3RyYXRvciIsImlkIjoxMSwiaWRlbnRpdHkiOiJtYXNhLm1hc2ExMjMiLCJleHAiOjE1OTY5OTIxODUuMjgxLCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNi4xIiwiaWF0IjoxNTk0MzEzNzg1fQ.SAnPSkqoM43A9l7AtApn0GNPo9R20Slg88O8N_9uRl4",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8d50324b-7f66-453e-9f00-cfd34a2e4582",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e07d28fd-7460-4fb3-8cbb-b3bfab750a70",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
